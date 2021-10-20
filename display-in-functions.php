@@ -22,10 +22,10 @@ function hook_javascript() {
                 data: request,
                 success: response,
                 error: function(jqXHR, textStatus, errorThrown) {
-                    //just leave these here - we are behind a session firewall so displaying errors here may only be viewed by team members
+                    //just leave these here - for debugging
                     //  alert(jqXHR.status);
                     //  alert(textStatus);
-                    alert(errorThrown);
+                    //alert(errorThrown);
                     //alert($('#title').val());
 
                     response([ ]);
